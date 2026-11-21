@@ -5,10 +5,10 @@ jobs:
  checkIssues: 
  runs-on: ubuntu-latest
  steps: 
-  -name: Check Issue Details
-  run: |
-   echo "Issue Number: ${{ github.event.issue.number }}"
-   echo "Issue Title: ${{ github.event.issue.title }}"
-   echo "Issue Body: ${{ github.event.issue.body }}"
-   echo "Issue Author: ${{ github.event.issue.user.login }}"
-   echo "Action: ${{ github.event.action }}"
+  - name: Check Issue Details
+    run: |
+     echo "Issue Number: ${{ github.event.issue.number }}"
+     echo "Issue Title: ${{ github.event.issue.title }}"
+     echo "Issue Body: ${{ github.event.issue.body }}"
+     echo "Issue Author: ${{ github.event.issue.user.login }}"
+     echo "Action: ${{ github.event.action }}"
